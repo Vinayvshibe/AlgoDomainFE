@@ -1,0 +1,46 @@
+<div class="main">
+
+    <div class="section" *ngFor="let product of products">
+        <div class="details "
+        style="margin: 10px,auto;  justify-content: center;">
+
+            <div class="border border-dark flex "
+                style="margin: 10px,auto; width: 80%; justify-content: center;">
+                <div class="text-center">
+                    <h1>Product name: {{product.name}}</h1>
+                    <h5>
+                        <ul>Product type: {{product.productType}}</ul>
+                    </h5>
+                    <h5>
+                        <ul>Category: {{product.category}}</ul>
+                    </h5>
+                    <h5>
+                        <ul>Baseprice: {{product.basePrice}}</ul>
+                    </h5>
+                    <h5>
+                        <ul>Discount: {{product.discount}}</ul>
+                    </h5>
+                    <h5>
+                        <ul>GST: {{product.charges.gst}}</ul>
+                    </h5>
+                    <h5>
+                        <ul>Delivery charges: {{product.charges.delivery}}</ul>
+                    </h5>
+                    <h5>
+                        <ul>Final Price: {{product.finalPrice}}</ul>
+                    </h5>
+
+                </div>
+
+
+            </div>
+            <div class="clear"></div>
+
+        </div>
+    </div>
+    <ul class="list-group-infos mt-3">
+        <li class="list-group-item mt-3">
+            <a class="navbar-brand black" style="color: blue;" routerLink="/welcomeadmin">Go back</a>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,28 @@
+<div class="container">
+    <h3 class="text-center mt-3" style="color: burlywood; background-color: grey; padding: 20px;">
+       Delete product
+    </h3>
+    <form>
+        <table class="table2"  >
+            <tr>
+                <th><label for="productId">Id:</label></th>
+                <th><input type="number" name="productId" [(ngModel)]="productId" placeholder="Enter Id here:"></th>
+            </tr>
+
+            <tr>
+                <th><input class="btn btn-success" type="submit" (click)="delete()" value="Delete"></th>
+                
+                <th><input class="btn btn-primary" type="reset" value="Reset"></th>
+            </tr>
+        </table>
+    </form>
+    
+    <ul class="list-group-infos mt-3">
+        <li class="list-group-item mt-3" >
+            <a class="navbar-brand black" routerLink="/all">Go back</a>
+        </li>
+    </ul>
+</div>
+
+
+
